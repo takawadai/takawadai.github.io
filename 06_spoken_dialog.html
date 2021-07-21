@@ -139,7 +139,7 @@ asr.onresult = function(event){
 							console.log(queryURL);
 							
 							const request = new XMLHttpRequest();
-							console.log("request : "request);
+							console.log("request : " + request);
 							request.open('GET', queryURL, true);
 							console.log(request);
 							request.responseType = 'json'; // レスポンスはJSON形式に変換
