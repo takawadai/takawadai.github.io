@@ -137,11 +137,9 @@ asr.onresult = function(event){
 						//answer = "ごめんなさい。わかりません。";
 					   let queryURL = URL + APIID + "&intext=" + transcript;
 							console.log(queryURL);
-							
-							const request = new XMLHttpRequest();
-							console.log("request : " + request);
-							request.open('GET', queryURL, true);
 							console.log(request);
+							const request = new XMLHttpRequest();
+							request.open('GET', queryURL, true);
 							request.responseType = 'json'; // レスポンスはJSON形式に変換
 							
 							request.onreadystatechange = function() {
