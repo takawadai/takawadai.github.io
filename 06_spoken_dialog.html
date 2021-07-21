@@ -44,16 +44,23 @@ const APIID = "dj00aiZpPUEzaktZVDEyUW5EZiZzPWNvbnN1bWVyc2VjcmV0Jng9MjY-"; // あ
 		"友達は":"マチカネワニくんにゃ"
 };*/
 var response = {
-		"誰,あなた" : ["和歌山大学のシステム工学部の案内をするわだにゃんにゃ", ""],
+		"誰,あなた" : ["和歌山大学の案内をするわだにゃんにゃ", ""],
 		"元気":["元気にゃ", ""],
 		"好きな食べ物":["ミカンにゃ", ""],
 		"好きな場所":["図書館にゃ", ""],
 		"性別":["妖精だから性別がないにゃ", ""],
-		"システム工学部,偏差値" : ["それを聞いて一体どうするにゃ", ""],
 		"システム工学部,就職" : ["シス工の進路状況のページを表示するにゃ", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
 		"システム工学部,入試" : ["シス工の入試のページを表示するにゃ", "https://www.wakayama-u.ac.jp/sys/admission/index.html"],
-		"システム工学部,ニュース" : ["シス工のニュースのページを表示するにゃ", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
-		"システム工学部,メジャー" : ["シス工のメジャーについてのページを表示するにゃ", "https://www.wakayama-u.ac.jp/sys/major/index.html"]
+		"シス工,ニュース" : ["シス工のニュースのページを表示するにゃ", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
+		"シス工,メジャー" : ["シス工のメジャーについてのページを表示するにゃ", "https://www.wakayama-u.ac.jp/sys/major/index.html"],
+		"シス工,就職" : ["シス工の進路状況のページを表示するにゃ", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
+		"シス工,入試" : ["シス工の入試のページを表示するにゃ", "https://www.wakayama-u.ac.jp/sys/admission/index.html"],
+		"シス工,ニュース" : ["シス工のニュースのページを表示するにゃ", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
+		"シス工,メジャー" : ["シス工のメジャーについてのページを表示するにゃ", "https://www.wakayama-u.ac.jp/sys/major/index.html"],
+		"シス工,就職" : ["シス工の進路状況のページを表示するにゃ", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
+		"シス工,入試" : ["シス工の入試のページを表示するにゃ", "https://www.wakayama-u.ac.jp/sys/admission/index.html"],
+		"シス工,ニュース" : ["シス工のニュースのページを表示するにゃ", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
+		"シス工,メジャー" : ["シス工のメジャーについてのページを表示するにゃ", "https://www.wakayama-u.ac.jp/sys/major/index.html"]
 };
 
 
@@ -128,7 +135,7 @@ asr.onresult = function(event){
 					if(typeof ret == 'undefined'){
 					
 						answer = "ごめんなさい。わかりません。";
-					   /*let queryURL = URL + APIID + "&intext=" + transcript;
+					   let queryURL = URL + APIID + "&intext=" + transcript;
 							console.log(queryURL);
 							
 							const request = new XMLHttpRequest();
@@ -147,7 +154,7 @@ asr.onresult = function(event){
 										var answer = res.result.param_text_tts || res.result.param_text;
 									}
 								}
-							}*/
+							}
 					}
 					
 				
