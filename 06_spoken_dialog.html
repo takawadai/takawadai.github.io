@@ -145,11 +145,14 @@ asr.onresult = function(event){
 							request.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {
 									let res = this.response; // 結果はJSON形式
+									console.log(res);
+
 									
 									Object.keys(res.result).forEach(function (key) {
 									console.log(key + ": " + res.result[key])
 									});
-									
+									console.log(key + ": " + res.result[key])
+									});
 									if(res.result.method == "SAY"){
 										answer = res.result.param_text_tts || res.result.param_text;
 										tts.text = answer;
