@@ -154,7 +154,6 @@ asr.onresult = function(event){
 									
 									if(res.result.method == "SAY"){
 										answer = res.result.param_text_tts || res.result.param_text;
-										tts.text = answer;
 										console.log(answer);
 									}
 								}
