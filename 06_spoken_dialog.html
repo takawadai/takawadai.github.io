@@ -158,15 +158,16 @@ asr.onresult = function(event){
 										webpage = '';
 										
 										output += transcript + ' => ' + answer + '<br>';
-										start_speech(answer, webpage);
+										//start_speech(answer, webpage);
 									}
 								}
 							}
 							request.send();
 					}else{
 							output += transcript + ' => ' + answer + '<br>';
-							start_speech(answer, webpage);
+							//start_speech(answer, webpage);
 					}
+					start_speech(answer, webpage);
 					
 			//}
     } else { // 結果がまだ未確定のとき
