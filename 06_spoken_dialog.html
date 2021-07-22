@@ -156,18 +156,17 @@ asr.onresult = function(event){
 										answer = res.result.param_text_tts || res.result.param_text;
 										console.log(answer);
 										webpage = '';
-										
+										request.send();
 										output += transcript + ' => ' + answer + '<br>';
-										//start_speech(answer, webpage);
+										start_speech(answer, webpage);
 									}
 								}
 							}
-							request.send();
+							//request.send();
 					}else{
 							output += transcript + ' => ' + answer + '<br>';
-							//start_speech(answer, webpage);
+							start_speech(answer, webpage);
 					}
-					start_speech(answer, webpage);
 					
 			//}
     } else { // 結果がまだ未確定のとき
