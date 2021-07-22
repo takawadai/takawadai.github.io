@@ -155,33 +155,40 @@ asr.onresult = function(event){
 									if(res.result.method == "SAY"){
 										answer = res.result.param_text_tts || res.result.param_text;
 										console.log(answer);
-										webpage = ''
+										webpage = '';
+										
+										output += transcript + ' => ' + answer + '<br>';
+										start_speech(answer, webpage)
 									}
 								}
 							}
 							request.send();
+					}else{
+							output += transcript + ' => ' + answer + '<br>';
+							start_speech(answer, webpage)
 					}
 					
-				
-				console.log(answer);
-				output += transcript + ' => ' + answer + '<br>';
-				tts.text = answer;
-					// 再生が終了（end）ときのイベントハンドラ（終了したときに実行される）
-				tts.onend = function(event){
-							if(typeof webpage != 'undefined'　&& webpage != ''){
-									location.href = webpage; // ページを移動
-							}   
-							asr.start(); // 音声認識を再開 
-				}
-					
-					
-				speechSynthesis.speak(tts); // 再生
 			//}
     } else { // 結果がまだ未確定のとき
         output_not_final = '<span style="color:#ddd;">' + transcript + '</span>';
     }
     resultOutput.innerHTML = output + output_not_final;
 }
+		function start_speech(text, url){
+      console.log("say:" + text);
+      console.log("url:" + url);
+      tts.text = text;
+      // 再生が終了（end）ときのイベントハンドラ（終了したときに実行される）
+      tts.onend = function(event){
+	  if(typeof url != 'undefined'　&& url != ''){
+	      location.href = url; // ページを移動
+	  }   
+	  asr.start(); // 音声認識を再開 
+      }
+      
+      speechSynthesis.speak(tts); // 再生
+      //}
+   }
 
 // 開始ボタンのイベントハンドラ
 startButton.addEventListener('click', function() {
