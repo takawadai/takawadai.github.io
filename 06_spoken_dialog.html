@@ -189,10 +189,10 @@ asr.onresult = function(event){
       tts.text = text;
       // 再生が終了（end）ときのイベントハンドラ（終了したときに実行される）
       tts.onend = function(event){
-	  if(typeof url != 'undefined'　&& url != ''){
-	      location.href = url; // ページを移動
-	  }   
-	  asr.start(); // 音声認識を再開 
+				if(typeof url != 'undefined'　&& url != ''){
+						location.href = url; // ページを移動
+				}   
+				asr.start(); // 音声認識を再開 
       }
       
       speechSynthesis.speak(tts); // 再生
