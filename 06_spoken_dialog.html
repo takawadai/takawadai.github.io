@@ -212,9 +212,8 @@ asr.onresult = function(event){
 
 // 開始ボタンのイベントハンドラ
 startButton.addEventListener('click', function() {
-		output += 'こちらは和歌山大学の案内です。ご質問をどうぞ';
+		output += 'こちらは和歌山大学の案内です。ご質問をどうぞ' + '<br>';
 		start_speech('こちらは和歌山大学の案内です。ご質問をどうぞ', '');
-		tts.text = answer;
 		
 		asr.start();
 })
