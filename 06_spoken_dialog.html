@@ -186,7 +186,6 @@ asr.onresult = function(event){
     resultOutput.innerHTML = output + output_not_final;
 }
 		function start_speech(text, url){
-		output += transcript + ' => ' + answer + '<br>';
       console.log("say:" + text);
       console.log("url:" + url);
       tts.text = text;
@@ -206,7 +205,8 @@ asr.onresult = function(event){
 // 開始ボタンのイベントハンドラ
 startButton.addEventListener('click', function() {
     asr.start();
-		
+		output += 'こちらは和歌山大学の案内です。ご質問をどうぞ';
+		start_speech('こちらは和歌山大学の案内です。ご質問をどうぞ", '');
 		//tts.text = answer;
 })
 
