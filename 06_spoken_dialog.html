@@ -190,8 +190,8 @@ asr.onresult = function(event){
       // 再生が終了（end）ときのイベントハンドラ（終了したときに実行される）
       tts.onend = function(event){
 				if(typeof url != 'undefined'　&& url != ''){
-						//location.href = url; // ページを移動
-						open(url, "_brank");
+						location.href = url; // ページを移動
+						//open(url, "_brank");
 				}   
 				asr.start(); // 音声認識を再開 
       }
