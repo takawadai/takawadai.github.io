@@ -162,13 +162,11 @@ asr.onresult = function(event){
 									
 									if(res.result.method == "SAY"){
 										answer = res.result.param_text_tts || res.result.param_text;
-										output += transcript + ' => ' + answer + '<br>';
-										start_speech(answer, webpage);
 										console.log(answer);
 										webpage = '';
 										
-										//output += transcript + ' => ' + answer + '<br>';
-										//start_speech(answer, webpage);
+										output += transcript + ' => ' + answer + '<br>';
+										start_speech(answer, webpage);
 									}
 								}
 							}
