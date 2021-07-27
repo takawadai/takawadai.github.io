@@ -53,6 +53,17 @@ var response = {
 		"和大,学部": ["教育学部、経済学部、観光学部、システム工学部があります", ""],
 		"大学,学部": ["教育学部、経済学部、観光学部、システム工学部があります", ""],
 		
+		/*"教育学部,ニュース" : ["経済学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/eco/latest/"],
+		"教育学部,コース" : ["経済学部の学科についてのページを表示します", "https://www.wakayama-u.ac.jp/eco/faculty/department/index.html"],
+		"教育学部,学科" : ["経済学部の学科についてのページを表示します", "https://www.wakayama-u.ac.jp/eco/faculty/department/index.html"],
+		"教育学部,就職" : ["経済学部の就職についてのページを表示します", "https://www.wakayama-u.ac.jp/eco/employment-support/"],
+		"経済学部,入試" : ["経済学部の入試についてのページを表示します", "https://www.wakayama-u.ac.jp/eco/admission/index.html"],
+		"経済,ニュース" : ["経済学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/eco/latest/"],
+		"経済,コース" : ["経済学部の学科についてのページを表示します", "https://www.wakayama-u.ac.jp/eco/faculty/department/index.html"],
+		"経済,学科" : ["経済学部の学科についてのページを表示します", "https://www.wakayama-u.ac.jp/eco/faculty/department/index.html"],
+		"経済,就職" : ["経済学部の就職についてのページを表示します", "https://www.wakayama-u.ac.jp/eco/employment-support/"],
+		"経済,入試" : ["経済学部の入試についてのページを表示します", "https://www.wakayama-u.ac.jp/eco/admission/index.html"],*/
+		
 		"経済学部,ニュース" : ["経済学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/eco/latest/"],
 		"経済学部,コース" : ["経済学部の学科についてのページを表示します", "https://www.wakayama-u.ac.jp/eco/faculty/department/index.html"],
 		"経済学部,学科" : ["経済学部の学科についてのページを表示します", "https://www.wakayama-u.ac.jp/eco/faculty/department/index.html"],
@@ -213,8 +224,8 @@ asr.onresult = function(event){
 // 開始ボタンのイベントハンドラ
 startButton.addEventListener('click', function() {
 	  asr.start();
-		//output += 'こちらは和歌山大学の案内です。ご質問をどうぞ' + '<br>';
-		//start_speech('こちらは和歌山大学の案内です。ご質問をどうぞ', '');
+		output += 'こちらは和歌山大学の案内です。ご質問をどうぞ' + '<br>';
+		start_speech('こちらは和歌山大学の案内です。ご質問をどうぞ', '');
 })
 
 // 停止ボタンのイベントハンドラ
