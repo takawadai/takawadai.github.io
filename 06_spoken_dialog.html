@@ -212,14 +212,14 @@ asr.onresult = function(event){
 										webpage = '';
 										
 										output += transcript + ' => ' + answer + '<br>';
-										start_speech(answer, webpage, answer);
+										start_speech(answer, webpage, answer, transcript);
 									}
 								}
 							}
 							request.send();
 					}else{
 							output += transcript + ' => ' + answer + '<br>';
-							start_speech(answer, webpage, answer);
+							start_speech(answer, webpage, answer, transcript);
 					}
 					
 					
@@ -229,7 +229,7 @@ asr.onresult = function(event){
     }
     resultOutput.innerHTML = output + output_not_final;
 }
-		function start_speech(text, url, answer){
+		function start_speech(text, url, answer, transcript){
 		  output += transcript + ' => ' + answer + '<br>';
       console.log("say:" + text);
       console.log("url:" + url);
