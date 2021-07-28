@@ -212,14 +212,14 @@ asr.onresult = function(event){
 										webpage = '';
 										
 										output += transcript + ' => ' + answer + '<br>';
-										start_speech(answer, webpage, anser);
+										start_speech(answer, webpage, answer);
 									}
 								}
 							}
 							request.send();
 					}else{
 							output += transcript + ' => ' + answer + '<br>';
-							start_speech(answer, webpage, anser);
+							start_speech(answer, webpage, answer);
 					}
 					
 					
