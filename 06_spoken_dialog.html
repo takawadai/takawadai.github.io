@@ -235,6 +235,13 @@ asr.onresult = function(event){
 										output += transcript + ' => ' + answer + '<br>';
 										start_speech(answer, webpage);
 									}
+									else{
+									answer = "ごめんなさい。わかりません。";
+									console.log(answer);
+									webpage = '';
+									output += transcript + ' => ' + answer + '<br>';
+									start_speech(answer, webpage);
+									}
 								}
 							}
 							request.send();
