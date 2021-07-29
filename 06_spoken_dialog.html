@@ -9,8 +9,8 @@
 </head>
 <body>
 
-<h1>課題：音声対話</h1>
-
+<h1>和歌山大学の案内</h1>
+<h2>こんな風に喋りかけて下さい</h2>
 
 <!--
 
@@ -52,6 +52,7 @@ var response = {
 		"和歌山大学,学部": ["教育学部、経済学部、観光学部、システム工学部があります", ""],
 		//"和大,学部": ["教育学部、経済学部、観光学部、システム工学部があります", ""],
 		"大学,学部": ["教育学部、経済学部、観光学部、システム工学部があります", ""],
+		"受験,不安": ["そんな時は楽しい動画を見てモチベーションを上げましょう！", "https://www.youtube.com/watch?v=vcfnqhbNZXk&ab_channel=wakayamauniv"],
 		
 		
 		"教育学部,ニュース" : ["教育学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/edu/latest/"],
@@ -62,9 +63,9 @@ var response = {
 		"教育学部,就職" : ["教育学部の就職についてのページを表示します", "https://www.wakayama-u.ac.jp/edu/logos/course.html"],
 		"教育学部,仕事" : ["教育学部の就職についてのページを表示します", "https://www.wakayama-u.ac.jp/edu/logos/course.html"],
 		"教育学部,入試" : ["教育学部の入試についてのページを表示します", "https://www.wakayama-u.ac.jp/edu/admission/index.html"],
-		"教育,ニュース" : ["教育学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/eco/latest/"],
-		"教育,おしらせ" : ["教育学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/eco/latest/"],
-		"教育,ニュース" : ["教育学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/eco/latest/"],
+		"教育,ニュース" : ["教育学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/edu/latest/"],
+		"教育,おしらせ" : ["教育学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/edu/latest/"],
+		"教育,ニュース" : ["教育学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/edu/latest/"],
 		"教育,最新情報" : ["教育学部の学科についてのページを表示します", "https://www.wakayama-u.ac.jp/edu/facultyofeducation/course/index.html"],
 		"教育,学科" : ["教育学部の学科についてのページを表示します", "https://www.wakayama-u.ac.jp/edu/facultyofeducation/course/index.html"],
 		"教育,就職" : ["教育学部の就職についてのページを表示します", "https://www.wakayama-u.ac.jp/edu/logos/course.html"],
@@ -117,14 +118,14 @@ var response = {
 		"システム工学部,就職" : ["システム工学部の進路状況についてページを表示します", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
 		"システム工学部,仕事" : ["システム工学部の進路状況についてページを表示します", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
 		"システム工学部,入試" : ["システム工学部の入試についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/admission/index.html"],
-		/*"シス工,ニュース" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
-		"シス工,おしらせ" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
-		"シス工,最新情報" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
-		"シス工,メジャー" : ["システム工学部のメジャーについてのページを表示します", "https://www.wakayama-u.ac.jp/sys/major/index.html"],
-		"シス工,学科" : ["システム工学部のメジャーについてのページを表示します", "https://www.wakayama-u.ac.jp/sys/major/index.html"],
-		"シス工,就職" : ["システム工学部の進路状況についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
-		"シス工,仕事" : ["システム工学部の進路状況についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
-		"シス工,入試" : ["システム工学部の入試についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/admission/index.html"],*/
+		"シスコ,ニュース" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
+		"シスコ,おしらせ" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
+		"シスコ,最新情報" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
+		"シスコ,メジャー" : ["システム工学部のメジャーについてのページを表示します", "https://www.wakayama-u.ac.jp/sys/major/index.html"],
+		"シスコ,学科" : ["システム工学部のメジャーについてのページを表示します", "https://www.wakayama-u.ac.jp/sys/major/index.html"],
+		"シスコ,就職" : ["システム工学部の進路状況についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
+		"シスコ,仕事" : ["システム工学部の進路状況についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
+		"シスコ,入試" : ["システム工学部の入試についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/admission/index.html"],
 		"工学部,ニュース" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
 		"工学部,おしらせ" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
 		"工学部,最新情報" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
@@ -226,7 +227,7 @@ asr.onresult = function(event){
 
 									
 									Object.keys(res.result).forEach(function (key) {
-									console.log(key + ": " + res.result[key])
+									console.log(key + ": " + res.result[key]);
 									});
 									
 									if(res.result.method == "SAY"){
