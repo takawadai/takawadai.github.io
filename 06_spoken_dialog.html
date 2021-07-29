@@ -35,6 +35,8 @@
 
 const URL = "https://jlp.yahooapis.jp/NLUService/V1/analyze?appid="; // APIのリクエストURL
 const APIID = "dj00aiZpPUEzaktZVDEyUW5EZiZzPWNvbnN1bWVyc2VjcmV0Jng9MjY-"; // あなたのアプリケーションID
+
+var on = 0;
 /*var response = {
     "誰":"わだにゃんにゃ",
     "何歳":"知らないにゃ",
@@ -132,6 +134,22 @@ var response = {
 		"シスコ,就職" : ["システム工学部の進路状況についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
 		"シスコ,仕事" : ["システム工学部の進路状況についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
 		"シスコ,入試" : ["システム工学部の入試についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/admission/index.html"],
+		"静高,ニュース" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
+		"静高,おしらせ" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
+		"静高,最新情報" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
+		"静高,メジャー" : ["システム工学部のメジャーについてのページを表示します", "https://www.wakayama-u.ac.jp/sys/major/index.html"],
+		"静高,学科" : ["システム工学部のメジャーについてのページを表示します", "https://www.wakayama-u.ac.jp/sys/major/index.html"],
+		"静高,就職" : ["システム工学部の進路状況についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
+		"静高,仕事" : ["システム工学部の進路状況についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
+		"静高,入試" : ["システム工学部の入試についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/admission/index.html"],
+		"静,ニュース" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
+		"静高,おしらせ" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
+		"静高,最新情報" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
+		"静高,メジャー" : ["システム工学部のメジャーについてのページを表示します", "https://www.wakayama-u.ac.jp/sys/major/index.html"],
+		"静高,学科" : ["システム工学部のメジャーについてのページを表示します", "https://www.wakayama-u.ac.jp/sys/major/index.html"],
+		"静高,就職" : ["システム工学部の進路状況についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
+		"静高,仕事" : ["システム工学部の進路状況についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/career/data.html"],
+		"静高,入試" : ["システム工学部の入試についてのページを表示します", "https://www.wakayama-u.ac.jp/sys/admission/index.html"],
 		"工学部,ニュース" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
 		"工学部,おしらせ" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
 		"工学部,最新情報" : ["システム工学部のニュースのページを表示します", "https://www.wakayama-u.ac.jp/sys/news/list/faculty/index.html"],
@@ -178,6 +196,13 @@ let output = ''; // 出力
 
 // 認識結果が出力されたときのイベントハンドラ
 asr.onresult = function(event){
+
+    if (on == 1) {
+    output += 'こちらは和歌山大学の案内です。ご質問をどうぞ' + '<br>';
+		resultOutput.innerHTML = output;
+		start_speech('こちらは和歌山大学の案内です。ご質問をどうぞ', '');
+		on = 0;
+    }
     let transcript = event.results[event.resultIndex][0].transcript; // 結果文字列
 		let transcript_previous = null; // 結果文字列（ひとつ前）
 		
@@ -241,6 +266,7 @@ asr.onresult = function(event){
 										console.log(answer);
 										webpage = '';
 										output += transcript + ' => ' + answer + '<br>';
+										resultOutput.innerHTML = output + output_not_final;
 										start_speech(answer, webpage);
 									}
 									else{
@@ -248,6 +274,7 @@ asr.onresult = function(event){
 										console.log(answer);
 										webpage = '';
 										output += transcript + ' => ' + answer + '<br>';
+										resultOutput.innerHTML = output + output_not_final;
 										start_speech(answer, webpage);
 									}
 								}
@@ -255,6 +282,7 @@ asr.onresult = function(event){
 							request.send();
 					}else{
 							output += transcript + ' => ' + answer + '<br>';
+							resultOutput.innerHTML = output + output_not_final;
 							start_speech(answer, webpage);
 					}
 					
@@ -263,7 +291,7 @@ asr.onresult = function(event){
     } else { // 結果がまだ未確定のとき
         output_not_final = '<span style="color:#ddd;">' + transcript + '</span>';
     }
-    resultOutput.innerHTML = output + output_not_final;
+    //resultOutput.innerHTML = output + output_not_final;
 }
 		function start_speech(text, url){
       console.log("say:" + text);
@@ -271,9 +299,8 @@ asr.onresult = function(event){
       tts.text = text;
       // 再生が終了（end）ときのイベントハンドラ（終了したときに実行される）
       tts.onend = function(event){
-				if(typeof url != 'undefined'　&& url != ''){
-						location.href = url; // ページを移動
-						//open(url, "_brank");
+				if(typeof url != 'undefined'　&& url != ''){ 
+						open(url, "_brank");// ページを移動
 				}   
 				asr.start(); // 音声認識を再開 
       }
@@ -284,9 +311,7 @@ asr.onresult = function(event){
 
 // 開始ボタンのイベントハンドラ
 startButton.addEventListener('click', function() {
-	  asr.start();
-		//output += 'こちらは和歌山大学の案内です。ご質問をどうぞ' + '<br>';
-		//start_speech('こちらは和歌山大学の案内です。ご質問をどうぞ', '');
+    asr.start();
 })
 
 // 停止ボタンのイベントハンドラ
