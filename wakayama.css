@@ -21,7 +21,7 @@ div.list p {
 	margin-top: 0px;
 }
 
-/*#startButton {
+#startButton {
 	appearance: none;
   border: 0;
   border-radius: 5px;
@@ -39,7 +39,7 @@ div.list p {
   color: #fff;
   padding: 8px 16px;
   font-size: 16px;
-}*/
+}
 
 p.api {
 	color:#660000	;
