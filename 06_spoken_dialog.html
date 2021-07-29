@@ -234,16 +234,15 @@ asr.onresult = function(event){
 										answer = res.result.param_text_tts || res.result.param_text;
 										console.log(answer);
 										webpage = '';
-										
 										output += transcript + ' => ' + answer + '<br>';
 										start_speech(answer, webpage);
 									}
 									else{
-									answer = "ごめんなさい。わかりません。";
-									console.log(answer);
-									webpage = '';
-									output += transcript + ' => ' + answer + '<br>';
-									start_speech(answer, webpage);
+										answer = "ごめんなさい。わかりません。";
+										console.log(answer);
+										webpage = '';
+										output += transcript + ' => ' + answer + '<br>';
+										start_speech(answer, webpage);
 									}
 								}
 							}
