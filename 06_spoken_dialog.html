@@ -191,7 +191,7 @@ asr.onresult = function(event){
     }*/
 		
     let output_not_final = '';
-		output_not_final = '<span style="color:#ddd;">' + transcript + '</span>';
+		//output_not_final = '<span style="color:#ddd;">' + transcript + '</span>';
     if (event.results[event.resultIndex].isFinal) { // 結果が確定（Final）のとき
 			 //if(new RegExp(wake_word).test(transcript_previous)){
 				asr.abort(); // 音声認識を停止
@@ -273,7 +273,7 @@ asr.onresult = function(event){
         output_not_final = '<span style="color:#ddd;">' + transcript + '</span>';
     }
 		//output_not_final = '<span style="color:#ddd;">' + transcript + '</span>';
-    //resultOutput.innerHTML = output + output_not_final;
+    resultOutput.innerHTML = output + output_not_final;
 }
 		function start_speech(text, url){
       console.log("say:" + text);
