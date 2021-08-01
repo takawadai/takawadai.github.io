@@ -30,3 +30,6 @@ stopボタンを押すと音声認識が終わります。
 コピペで使えるリストデザイン34選：CSSで箇条書きをおしゃれに、2019年2月7日　更新
 https://saruwakakun.com/html-css/reference/ul-ol-li-design（2021年7月31日　参照）
 
+
+ON/OFFスイッチをCSSのみで実装
+https://webparts.cman.jp/button/onoff/ (2021年8月1日　参照）
