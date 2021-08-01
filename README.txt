@@ -29,3 +29,4 @@ stopボタンを押すと音声認識が終わります。
 〇参考サイト
 コピペで使えるリストデザイン34選：CSSで箇条書きをおしゃれに、2019年2月7日　更新
 https://saruwakakun.com/html-css/reference/ul-ol-li-design（2021年7月31日　参照）
+

@@ -22,9 +22,19 @@
 	わだにゃんの部屋
 	http://web.wakayama-u.ac.jp/mascot/index.html (2021年5月31日　参照）
 -->
-<p>
+<!--<p>
 <button id="startButton">start</button>
 <button id="stopButton">stop</button>
+</p>
+-->
+
+<p>
+<div class="sample1Area" id="makeImg">
+  <input type="radio" name="sample1radio" id="startButton">
+    <label for="startButton">start</label>
+  <input type="radio" name="sample1radio" id="stopButton" checked="">
+    <label for="stopButton">stop</label>
+</div>
 </p>
 
 <p>
@@ -173,6 +183,7 @@ var response = {
 
 
 //var wake_word = "OK.*コンピューター";
+
 const startButton = document.querySelector('#startButton'); // 開始ボタン
 const stopButton = document.querySelector('#stopButton'); // 停止ボタン
 const resultOutput = document.querySelector('#resultOutput'); // 結果出力エリア
