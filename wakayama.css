@@ -100,9 +100,9 @@ div.list p {
  /* === ON側のラジオボタンのラベル（ONのとき） ============== */
 .sample1Area  #startButton:checked +label {
                                         /* 背景グラデーション */
-  background     : linear-gradient(180deg, #00b359, #006633, #00b359);
+  background     : orange;
   color          : #fff;                /* 文字色             */
-  text-shadow    : 1px 1px 1px #333;    /* 文字に影を付ける   */
+  //text-shadow    : 1px 1px 1px #333;    /* 文字に影を付ける   */
 }
  
  /* === OFF側のラジオボタンのラベル（標準） ================ */
