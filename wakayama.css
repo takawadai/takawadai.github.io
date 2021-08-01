@@ -65,7 +65,7 @@ div.list p {
   position       : relative;            /* 親要素が基点       */
   margin         : left;                /* 中央寄せ           */
   width          : 160px;               /* ボタンの横幅       */
-  height         : 60px;                /* ボタンの高さ       */
+  height         : 50px;                /* ボタンの高さ       */
 }
  
  /* === ラジオボタン ======================================== */
@@ -82,7 +82,7 @@ div.list p {
   left           : 0;                   /* 標準表示位置(左)   */
   right          : 0;                   /* 標準表示位置(右)   */
   text-align     : center;              /* 文字位置は中央     */
-  line-height    : 60px;                /* 1行の高さ(中央寄せ)*/
+  line-height    : 50px;                /* 1行の高さ(中央寄せ)*/
   font-size      : 18pt;                /* 文字サイズ         */
   font-weight    : bold;                /* 太字               */
   border         : 2px solid #ccc;      /* 枠線(一旦四方向)   */
