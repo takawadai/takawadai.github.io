@@ -285,7 +285,7 @@ asr.onresult = function(event){
 										console.log(answer);
 										webpage = '';
 										output += '<div class="balloon balloonR">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + transcript + '</div></div>' + '</div>';
-										output += '<div class="balloon balloonL">'  + '<div class="balloon-img"><img src="character_orange.png" /></div>' +  '<div class="balloon-text"><div class="balloon-text-inner">' + answer + '</div></div>' + '</div>';
+										output += '<div class="balloon balloonL">'  + '<img src="character_orange.png" div class="balloon-img">' +  '<div class="balloon-text"><div class="balloon-text-inner">' + answer + '</div></div>' + '</div>';
 										resultOutput.innerHTML = output + output_not_final;
 										start_speech(answer, webpage);
 									}
@@ -294,7 +294,7 @@ asr.onresult = function(event){
 										console.log(answer);
 										webpage = '';
 										output += '<div class="balloon balloonR">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + transcript + '</div></div>' + '</div>';
-							      output += '<div class="balloon balloonL">' + '<div class="balloon-img"><img src="character_orange.png" /></div>'  + '<div class="balloon-text"><div class="balloon-text-inner">' +  answer + '</div></div>' + '</div>';
+							      output += '<div class="balloon balloonL">' + '<img src="character_orange.png" div class="balloon-img">'  + '<div class="balloon-text"><div class="balloon-text-inner">' +  answer + '</div></div>' + '</div>';
 										resultOutput.innerHTML = output + output_not_final;
 										start_speech(answer, webpage);
 									}
@@ -303,7 +303,7 @@ asr.onresult = function(event){
 							request.send();
 					}else{
 							output += '<div class="balloon balloonR">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + transcript + '</div></div>' + '</div>';
-							output += '<div class="balloon balloonL">'  + '<div class="balloon-img"><img src="character_orange.png" /></div>' + '<div class="balloon-text"><div class="balloon-text-inner">' + answer + '</div></div>' + '</div>';
+							output += '<div class="balloon balloonL">'  + '<img src="character_orange.png" div class="balloon-img">' + '<div class="balloon-text"><div class="balloon-text-inner">' + answer + '</div></div>' + '</div>';
 							resultOutput.innerHTML = output + output_not_final;
 							start_speech(answer, webpage);
 					}
@@ -311,7 +311,7 @@ asr.onresult = function(event){
 					
 			//}
     } else { // 結果がまだ未確定のとき
-						output_not_final = '<div class="balloon balloonR">' + '<div class="balloon-text"><div class="balloon-text-inner">' + '<span style="color:#ddd;">' + transcript + '</span>' + '</div></div>' + '</div>' ;
+						output_not_final = '<div class="balloon balloonR">' + '<div class="balloon-text"><div class="balloon-text-inner">' + '<span style="color:white;">' + transcript + '</span>' + '</div></div>' + '</div>' ;
     }
 		//output_not_final = '<span style="color:#ddd;">' + transcript + '</span>';
     resultOutput.innerHTML = output + output_not_final;

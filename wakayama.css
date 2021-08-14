@@ -129,9 +129,11 @@ div.list p {
 .balloonR{
   flex-direction: row-reverse;
 }
-img.balloon-img{
-  width: 80px;
-  height: auto;
+.balloon-img{
+  width: auto;
+  height: 60px;
+	display: flex;
+	align-items: center;
   flex-shrink: 0;
 }
 
