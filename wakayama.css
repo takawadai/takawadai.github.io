@@ -129,11 +129,13 @@ div.list p {
 .balloonR{
   flex-direction: row-reverse;
 }
-.balloon-img{
+img.balloon-img{
   width: 80px;
   height: auto;
   flex-shrink: 0;
 }
+
+
 .balloon-text{
   padding: 1em;
   border-radius: 6px;
@@ -153,19 +155,27 @@ div.list p {
 }
 .balloonL .balloon-text{
   margin: 0 0 0 15px;
-  background: #ddbcff;
+  background: white;
+	border: solid;
+	border-color: orange
+
 }
 .balloonR .balloon-text{
   margin: 0 15px 0;
-  background: #dbffb7;
+  background: #ffc966;
 }
 .balloonL .balloon-text::before{
   left: -16px;
-  border-right: 16px solid #ddbcff;
+	border-right: 16px solid orange;
+
+}
+.balloonL .balloon-text::after{
+  left: -14px
+	border-right: 14px solid white;
 }
 .balloonR .balloon-text::before{
   right: -16px;
-  border-left: 16px solid #dbffb7;
+  border-left: 16px solid #ffc966;
 }
 
 

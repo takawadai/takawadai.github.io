@@ -285,7 +285,7 @@ asr.onresult = function(event){
 										console.log(answer);
 										webpage = '';
 										output += '<div class="balloon balloonR">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + transcript + '</div></div>' + '</div>';
-										output += '<div class="balloon balloonL">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + answer + '</div></div>' + '</div>';
+										output += '<div class="balloon balloonL">'  + '<div class="balloon-img"><img src="character_orange.png" /></div>' +  '<div class="balloon-text"><div class="balloon-text-inner">' + answer + '</div></div>' + '</div>';
 										resultOutput.innerHTML = output + output_not_final;
 										start_speech(answer, webpage);
 									}
@@ -294,7 +294,7 @@ asr.onresult = function(event){
 										console.log(answer);
 										webpage = '';
 										output += '<div class="balloon balloonR">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + transcript + '</div></div>' + '</div>';
-							output += '<div class="balloon balloonL">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + answer + '</div></div>' + '</div>';
+							      output += '<div class="balloon balloonL">' + '<div class="balloon-img"><img src="character_orange.png" /></div>'  + '<div class="balloon-text"><div class="balloon-text-inner">' +  answer + '</div></div>' + '</div>';
 										resultOutput.innerHTML = output + output_not_final;
 										start_speech(answer, webpage);
 									}
@@ -303,7 +303,7 @@ asr.onresult = function(event){
 							request.send();
 					}else{
 							output += '<div class="balloon balloonR">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + transcript + '</div></div>' + '</div>';
-							output += '<div class="balloon balloonL">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + answer + '</div></div>' + '</div>';
+							output += '<div class="balloon balloonL">'  + '<div class="balloon-img"><img src="character_orange.png" /></div>' + '<div class="balloon-text"><div class="balloon-text-inner">' + answer + '</div></div>' + '</div>';
 							resultOutput.innerHTML = output + output_not_final;
 							start_speech(answer, webpage);
 					}
