@@ -9,6 +9,8 @@
 </head>
 <body>
 <h1>和歌山大学案内ページ（非公式）へようこそ!</h1>
+
+<img src="character_orange.png" class = "atama">
 <div class="list">
   <p>こんな風に喋りかけてみて下さい</p>
 	<li>和歌山大学の学部は？</li>
@@ -63,7 +65,7 @@ var response = {
 		"誰,あなた" : ["和歌山大学の紹介をする者です。", ""],
 		"元気":["元気です。", ""],
 		"好きな食べ物":["ミカンですね。", ""],
-		"好きな場所":["図書館です", ""],
+		"好きな場所":["図書館です。", ""],
 		"性別":["コンピュータなので性別はありません。", ""],
 		"和歌山大学,学部": ["教育学部、経済学部、観光学部、システム工学部があります。", ""],
 		"和大,学部": ["教育学部、経済学部、観光学部、システム工学部があります。", ""],
@@ -119,7 +121,7 @@ var response = {
 		
 		
 		"経済学部" : ["経済学部のページを表示します。","https://www.wakayama-u.ac.jp/eco/"],
-		"教育" : ["経済学部のページを表示します。","https://www.wakayama-u.ac.jp/eco/"],
+		"経済学部" : ["経済学部のページを表示します。","https://www.wakayama-u.ac.jp/eco/"],
 		"経済学部,ニュース" : ["経済学部のニュースのページを表示します。", "https://www.wakayama-u.ac.jp/eco/latest/"],
 		"経済学部,おしらせ" : ["経済学部のニュースのページを表示します。", "https://www.wakayama-u.ac.jp/eco/latest/"],
 		"経済学部,最新情報" : ["経済学部のニュースのページを表示します。", "https://www.wakayama-u.ac.jp/eco/latest/"],
@@ -291,7 +293,7 @@ asr.onresult = function(event){
 										answer = res.result.param_text_tts || res.result.param_text;
 										console.log(answer);
 										webpage = '';
-										output += '<div class="balloon balloonR">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + transcript + '</div></div>' + '</div>';
+										output += '<div class="balloon balloonR">'  + '<img src="figure_standing.png" div class="balloon-img">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + transcript + '</div></div>' + '</div>';
 										output += '<div class="balloon balloonL">'  + '<img src="character_orange.png" div class="balloon-img">' +  '<div class="balloon-text"><div class="balloon-text-inner">' + answer + '</div></div>' + '</div>';
 										resultOutput.innerHTML = output + output_not_final;
 										start_speech(answer, webpage);
@@ -300,7 +302,7 @@ asr.onresult = function(event){
 										answer = "ごめんなさい。わかりません。";
 										console.log(answer);
 										webpage = '';
-										output += '<div class="balloon balloonR">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + transcript + '</div></div>' + '</div>';
+										output += '<div class="balloon balloonR">'  + '<img src="figure_standing.png" div class="balloon-img">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + transcript + '</div></div>' + '</div>';
 							      output += '<div class="balloon balloonL">' + '<img src="character_orange.png" div class="balloon-img">'  + '<div class="balloon-text"><div class="balloon-text-inner">' +  answer + '</div></div>' + '</div>';
 										resultOutput.innerHTML = output + output_not_final;
 										start_speech(answer, webpage);
@@ -309,7 +311,7 @@ asr.onresult = function(event){
 							}
 							request.send();
 					}else{
-							output += '<div class="balloon balloonR">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + transcript + '</div></div>' + '</div>';
+							output += '<div class="balloon balloonR">'  + '<img src="figure_standing.png" div class="balloon-img">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + transcript + '</div></div>' + '</div>';
 							output += '<div class="balloon balloonL">'  + '<img src="character_orange.png" div class="balloon-img">' + '<div class="balloon-text"><div class="balloon-text-inner">' + answer + '</div></div>' + '</div>';
 							resultOutput.innerHTML = output + output_not_final;
 							start_speech(answer, webpage);
@@ -318,7 +320,7 @@ asr.onresult = function(event){
 					
 			//}
     } else { // 結果がまだ未確定のとき
-						output_not_final = '<div class="balloon balloonR">' + '<div class="balloon-text"><div class="balloon-text-inner">' + '<span style="color:white;">' + transcript + '</span>' + '</div></div>' + '</div>' ;
+						output_not_final = '<div class="balloon balloonR">'  + '<img src="figure_standing.png" div class="balloon-img">'  + '<div class="balloon-text"><div class="balloon-text-inner">' + '<span style="color:white;">' + transcript + '</span>' + '</div></div>' + '</div>' ;
     }
 		//output_not_final = '<span style="color:#ddd;">' + transcript + '</span>';
     resultOutput.innerHTML = output + output_not_final;

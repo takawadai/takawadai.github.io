@@ -7,14 +7,23 @@ h1{
 	
 }
 
+.atama{
+	margin: 20px;
+  width: auto;
+  height: 150px;
+	display: flex;
+	align-items: center;
+  flex-shrink: 0;
+}
 div.list {
+	max-width: 701px;
 	background: #fffde8;
 	color:#660000	;
   box-shadow: 0px 0px 0px 10px #fffde8;/*線の外側*/
   border: dashed 2px #ffb03f;/*破線*/
   border-radius: 9px;
-  margin-left: 10px;/*はみ出ないように調整*/
-  margin-right: 10px;/*はみ出ないように調整*/
+  margin-left: 20px;/*はみ出ないように調整*/
+  margin-right: -10px;/*はみ出ないように調整*/
   padding: 0.5em 0.5em 0.5em 2em;
 }
 div.list p {
@@ -66,6 +75,7 @@ div.list p {
   margin         : left;                /* 中央寄せ           */
   width          : 160px;               /* ボタンの横幅       */
   height         : 50px;                /* ボタンの高さ       */
+	margin				 : 0 0 0 20px;
 }
  
  /* === ラジオボタン ======================================== */
@@ -145,6 +155,7 @@ div.list p {
   display: flex;
 }
 .balloon-text-inner{
+	color:#660000	;
   margin: auto;
 }
 .balloon-text::before,.balloon-text::after{
@@ -183,13 +194,14 @@ div.list p {
 
 p.api {
 	color:#660000	;
+	margin: 0 0 0 20px;
 	word-break: break-all;
 }
 
 #resultOutput
 {
 	width: 100%;
-  margin: 0 0 0 0;
+  margin: 0 0 0 20px;
   max-width: 701px;
 }
 
