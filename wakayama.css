@@ -1,9 +1,12 @@
+body {
+}
 h1{
 	top: 0px;
 	left: 0px;
 	right: 0px;
 	background-color: orange;
 	color: white;
+	font-family: 'Noto Sans JP', sans-serif;
 	
 }
 
@@ -23,7 +26,7 @@ div.list {
   border: dashed 2px #ffb03f;/*破線*/
   border-radius: 9px;
   margin-left: 20px;/*はみ出ないように調整*/
-  margin-right: -10px;/*はみ出ないように調整*/
+  margin-right: 20px;/*はみ出ないように調整*/
   padding: 0.5em 0.5em 0.5em 2em;
 }
 div.list p {
@@ -136,8 +139,14 @@ div.list p {
   display: flex;
   margin: 0 0 1.5em 0;
 }
+.balloonL{
+	margin-right: 20px;
+	padding-right: 20px;
+}
 .balloonR{
   flex-direction: row-reverse;
+	margin-right: 20px;
+	padding-right: 20px;
 }
 .balloon-img{
   width: auto;
@@ -170,12 +179,14 @@ div.list p {
   margin: 0 0 0 15px;
   background: white;
 	border: solid;
-	border-color: orange
+	border-color: orange;
+	font-family: 'Noto Sans JP', sans-serif;
 
 }
 .balloonR .balloon-text{
   margin: 0 15px 0;
   background: #ffc966;
+	font-family: 'Noto Sans JP', sans-serif;
 }
 .balloonL .balloon-text::before{
   left: -16px;
@@ -201,8 +212,9 @@ p.api {
 #resultOutput
 {
 	width: 100%;
-  margin: 0 0 0 20px;
-  max-width: 745px;
+  margin-left: 20px;/*はみ出ないように調整*/
+  margin-right: 20px;/*はみ出ないように調整*/
+  max-width: 785px;
 }
 
 
