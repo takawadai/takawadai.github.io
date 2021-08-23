@@ -1,16 +1,28 @@
+body {
+	/*background-color: #FDFDF9;*/
+	background-color: #f5f5dc;
+}
+
+.tutorial {
+	margin: 0 20px 6px 20px;
+}
 h1{
 	top: 0px;
 	left: 0px;
 	right: 0px;
+	margin-bottom: 30px;
 	background-color: orange;
 	color: white;
 	font-family: 'Noto Sans JP', sans-serif;
-	
 }
 
+div.balloonL p {
+	margin-top: 0px;
+}
 .atama{
-	margin: 20px;
-  width: auto;
+  flex-shrink: 0;
+	
+	width: auto;
   height: 150px;
 	display: flex;
 	align-items: center;
