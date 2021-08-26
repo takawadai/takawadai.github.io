@@ -6,7 +6,8 @@ body {
 
 .tutorial {
 	margin: 0 20px 6px 20px;
-	max-width: 765px;
+	max-width: 745px;
+	
 }
 h1{
 	top: 0px;
@@ -158,12 +159,12 @@ div.list p {
   margin: 0 0 1.5em 0;
 }
 .balloonL{
-	margin-right: 20px;
+	/*margin-right: 20px;
 	/*padding-right: 20px;*/
 }
 .balloonR{
   flex-direction: row-reverse;
-	margin-right: 20px;
+	/*margin-right: 20px;
 	/*padding-right: 20px;*/
 }
 .balloon-img{
@@ -233,7 +234,7 @@ p.api {
 	margin:0 20px;
   /*margin-left: 20px;/*はみ出ないように調整*/
   /*margin-right: 20px;/*はみ出ないように調整*/
-  max-width: 785px;
+  max-width: 745px;
 	
 }
 
