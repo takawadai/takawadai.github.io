@@ -6,6 +6,7 @@ body {
 
 .tutorial {
 	margin: 0 20px 6px 20px;
+	max-width: 765px;
 }
 h1{
 	top: 0px;
@@ -31,8 +32,9 @@ div.balloonL p {
   flex-shrink: 0;
 }
 div.hontai {
-	width: 80%;
+	/*width: 80%;*/
 	margin: 0 auto;
+	max-width: 785px;
 }
 div.list {
 	max-width: 701px;
@@ -228,9 +230,11 @@ p.api {
 #resultOutput
 {
 	width: 100%;
-  margin-left: 20px;/*はみ出ないように調整*/
-  margin-right: 20px;/*はみ出ないように調整*/
+	margin:0 20px;
+  /*margin-left: 20px;/*はみ出ないように調整*/
+  /*margin-right: 20px;/*はみ出ないように調整*/
   max-width: 785px;
+	
 }
 
 
