@@ -7,14 +7,14 @@ body {
 .tutorial {
 	margin: 0 20px 6px 20px;
 	max-width: 745px;
-	
 }
+
 h1{
 	top: 0px;
 	left: 0px;
 	right: 0px;
 	padding-left: 10px;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 	background-color: orange;
 	color: white;
 	font-family: 'Noto Sans JP', sans-serif;
@@ -23,6 +23,7 @@ h1{
 div.balloonL p {
 	margin-top: 0px;
 }
+
 .atama{
   flex-shrink: 0;
 	
@@ -34,8 +35,14 @@ div.balloonL p {
 }
 div.hontai {
 	/*width: 80%;*/
-	margin: 0 auto;
+	margin: 30px auto 30px auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	max-width: 785px;
+	background-color: white;
+	border-radius:20px;
+	border-style:dashed;
+	border-color:#3cb371;
 }
 div.list {
 	max-width: 701px;
@@ -230,7 +237,7 @@ p.api {
 
 #resultOutput
 {
-	width: 100%;
+	/*width: 100%;*/
 	margin:0 20px;
   /*margin-left: 20px;/*はみ出ないように調整*/
   /*margin-right: 20px;/*はみ出ないように調整*/
