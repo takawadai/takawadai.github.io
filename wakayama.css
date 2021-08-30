@@ -26,7 +26,6 @@ h1{
 
 .atama{
   flex-shrink: 0;
-	
 	width: auto;
   height: 150px;
 	display: flex;
@@ -105,6 +104,7 @@ div.list p {
   width          : 160px;               /* ボタンの横幅       */
   height         : 50px;                /* ボタンの高さ       */
 	margin				 : 0 0 0 20px;
+	font-family: 'Josefin Sans', sans-serif;
 }
  
  /* === ラジオボタン ======================================== */
@@ -233,6 +233,7 @@ p.api {
 	color:#660000	;
 	margin: 0 0 0 20px;
 	word-break: break-all;
+	font-family: 'Noto Sans JP', sans-serif;
 }
 
 #resultOutput
@@ -242,6 +243,7 @@ p.api {
   /*margin-left: 20px;/*はみ出ないように調整*/
   /*margin-right: 20px;/*はみ出ないように調整*/
   max-width: 745px;
+	font-family: 'Noto Sans JP', sans-serif;
 	
 }
 
