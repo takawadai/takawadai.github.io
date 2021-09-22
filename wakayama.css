@@ -9,10 +9,23 @@ body {
 	max-width: 745px;
 }
 
+.site-header{
+    /*background: #fff;*/
+    display: flex;
+		position: fixed;
+		margin: 0;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		background-color: #f5f5dc;
+		z-index:100;
+   /*padding: 0px 0px;
+		margin: 0px;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;*/
+}
 h1{
-	top: 0px;
-	left: 0px;
-	right: 0px;
 	padding-left: 10px;
 	/*margin-bottom: 30px;*/
 	background-color: orange;
@@ -34,7 +47,7 @@ h1{
 }
 div.hontai {
 	/*width: 80%;*/
-	margin: 30px auto 30px auto;
+	margin: 100px auto 30px auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	max-width: 785px;
