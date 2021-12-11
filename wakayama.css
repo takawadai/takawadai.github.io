@@ -57,7 +57,7 @@ div.hontai {
 	border-color:#3cb371;
 }
 
-@media screen and (max-width:658px) {
+@media screen and (max-width:776px) {
 	div.hontai {
 		/*width: 80%;*/
 		margin: 150px auto 30px auto;
@@ -70,6 +70,20 @@ div.hontai {
 		border-color:#3cb371;
   }
 }
+
+/*@media screen and (max-width:658px) {
+	div.hontai {
+	
+		margin: 150px auto 30px auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		max-width: 785px;
+		background-color: white;
+		border-radius:20px;
+		border-style:dashed;
+		border-color:#3cb371;
+  }
+}*/
 div.list {
 	max-width: 701px;
 	background: #fffde8;
